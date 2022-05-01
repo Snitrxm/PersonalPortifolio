@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgDiv{
+    border: 3px solid hsl(250, 66%, 75%);
+    border-radius: 50%;
+    padding: 2px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.imgDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.textsBottomImage{
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.textsBottomImage p{
+    color: #575757;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialIcons a{
+    color: #000;
+    cursor: pointer;
+    transition: .2s;
+    margin-bottom: 20px;
+}
+
+.socialIcons a:hover{
+    color: hsl(207, 90%, 61%);
+}
+
+.personalInfos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.personalInfos .firstInfo{
+    text-align: center;
+}
+
+.personalInfos .firstInfo p{
+    color: #757575;
+}
+
+.personalInfos .secondInfo{
+    text-align: center;
+}
+
+.personalInfos .secondInfo p{
+    color: #757575;
+}
+
+.personalInfos .thirdInfo p{
+    color: #757575;
+}
+
+.personalInfos .thirdInfo{
+    text-align: center;
+}
+
+.cvAndContactButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cvAndContactButtons .cvButton{
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(207, 90%, 61%);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cvAndContactButtons .cvButton span{
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.cvAndContactButtons .cvButton:hover{
+    background-color: hsl(207, 80%, 54%);
+}
+
+.cvAndContactButtons .contactButtons{
+    margin-left: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.cvAndContactButtons .contactButtons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cvAndContactButtons .contactButtons button:hover{
+    background-color: #c5c5c5;
+}
