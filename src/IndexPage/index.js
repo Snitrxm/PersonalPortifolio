@@ -1,14 +1,15 @@
 import './style.css'
 import ProfilePic from '../images/profile.png'
 import CV from '../cv.pdf'
-import FirstProject from '../images/first.jpg'
-import SecondProject from '../images/second.jpg'
-import ThirdProject from '../images/third.jpg'
+import FirstProject from '../images/todoapp.png'
+import SecondProject from '../images/agendamento.png'
+import ThirdProject from '../images/banco.png'
+import FourthProject from '../images/advice.png'
 import { useRef } from 'react'
 
 
-import { BsGithub, BsLinkedin, BsInstagram, BsDownload, BsWhatsapp, BsMessenger } from 'react-icons/bs'
-import { AiOutlineCheckCircle } from 'react-icons/ai'
+import { BsGithub, BsLinkedin, BsInstagram, BsDownload, BsWhatsapp, BsMessenger} from 'react-icons/bs'
+import { AiOutlineCheckCircle,AiOutlineLink } from 'react-icons/ai'
 
 
 const Index = () => {
@@ -77,22 +78,24 @@ const Index = () => {
                             <a href={CV} download="AndreCV"><button className='cvButton'>Download CV<span><BsDownload/></span></button></a>
                             <div className='contactButtons'>
                                 <a href="https://api.whatsapp.com/send?phone=5512988791216"><button>{<BsWhatsapp/>}</button></a>
-                                <a href=""><button>{<BsMessenger/>}</button></a>
+                                <a href="https://m.me/andre.rocha.90834776"><button>{<BsMessenger/>}</button></a>
                             </div>
                         </div>
                         <div className='buttonOfProjects'>
                             <button className='active' onClick={() => clickProject()} ref={projectButton}>Projects</button>
-                            <button className='disable' onClick={() => clickSkills()} ref={skillsButton}>Skils</button>
+                            <button className='disable' onClick={() => clickSkills()} ref={skillsButton}>Skills</button>
                         </div>
                 </div>
             </header>
             <main>
                     <div className='projects' ref={projectsContainer}>
                         <div className='firstProject crop'>
-                            <img src={FirstProject} alt=''></img>
+                            <img src={FirstProject} alt='' className='imgs'></img>
                             <div className='projectModal'>
                                 <div>
-                                    <h3>First Project</h3>
+                                    <p>Web</p>
+                                    <h3>Todo Site with ReactJS</h3>
+                                    <a href="https://github.com/Snitrxm/ToDo-List-With-React" target='_blank' rel='noreferrer'><button><AiOutlineLink className='link'/></button></a>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +103,9 @@ const Index = () => {
                             <img src={SecondProject} alt=''></img>
                             <div className='projectModal'>
                                 <div>
-                                    <h3>First Project</h3>
+                                    <p>Web</p>
+                                    <h3>Appointment for BarberShop</h3>
+                                    <a href="https://github.com/Snitrxm/Barber-Shop-Schedule" target='_blank' rel='noreferrer'><button><AiOutlineLink className='link'/></button></a>
                                 </div>
                             </div>
                         </div>
@@ -108,15 +113,19 @@ const Index = () => {
                             <img src={ThirdProject} alt=''></img>
                             <div className='projectModal'>
                                 <div>
-                                    <h3>First Project</h3>
+                                    <p>Web</p>
+                                    <h3>Bank Site With NodeJS</h3>
+                                    <a href="https://github.com/Snitrxm/Banking-App-with-Node" target='_blank' rel='noreferrer'><button><AiOutlineLink className='link'/></button></a>
                                 </div>
                             </div>
                         </div>
                         <div className='thirdProject crop'>
-                            <img src={ThirdProject} alt=''></img>
+                            <img src={FourthProject} alt=''></img>
                             <div className='projectModal'>
                                 <div>
-                                    <h3>First Project</h3>
+                                    <p>Web</p>
+                                    <h3>A Advice API with NodeJS</h3>
+                                    <a href="https://github.com/Snitrxm/AdviceAPI" target='_blank' rel='noreferrer'><button><AiOutlineLink className='link'/></button></a>
                                 </div>
                             </div>
                         </div>
@@ -171,6 +180,13 @@ const Index = () => {
                                     <span><AiOutlineCheckCircle className='checkIcon'/></span>
                                     <div>
                                         <h4>GIT</h4>
+                                        <p>Advanced</p>
+                                    </div>
+                                </div>
+                                <div className='divSkill'>
+                                    <span><AiOutlineCheckCircle className='checkIcon'/></span>
+                                    <div>
+                                        <h4>GitHub</h4>
                                         <p>Advanced</p>
                                     </div>
                                 </div>
