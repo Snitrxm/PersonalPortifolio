@@ -5,6 +5,7 @@ import FirstProject from '../images/todoapp.png'
 import SecondProject from '../images/agendamento.png'
 import ThirdProject from '../images/banco.png'
 import FourthProject from '../images/advice.png'
+import FifthProject from '../images/next.png'
 import { useRef } from 'react'
 
 
@@ -27,7 +28,7 @@ const Index = () => {
             skillsButton.current.classList.add('active');
             skillsContainer.current.style.display = 'flex';
             projectsContainer.current.style.display = 'none';
-            
+
         }
     }
 
@@ -41,7 +42,7 @@ const Index = () => {
             skillsContainer.current.style.display = 'none';
         }
     }
-
+    
     return (
         <div className='app'>
             <header className='header'>
@@ -96,6 +97,16 @@ const Index = () => {
                                     <p>Web</p>
                                     <h3>Todo Site with ReactJS</h3>
                                     <a href="https://github.com/Snitrxm/ToDo-List-With-React" target='_blank' rel='noreferrer'><button><AiOutlineLink className='link'/></button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='thirdProject crop'>
+                            <img src={FifthProject} alt=''></img>
+                            <div className='projectModal'>
+                                <div>
+                                    <p>Web</p>
+                                    <h3>A Github Searcher with NextJS</h3>
+                                    <a href="https://githubreposfinder.vercel.app/" target='_blank' rel='noreferrer'><button><AiOutlineLink className='link'/></button></a>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +254,7 @@ const Index = () => {
             </main>
             <footer>
                 <div className='footer'>
-                    <p>Developed by <a href='https://twitter.com/Snitrxxm' target='_blank'>André Rocha</a></p>
+                    <p>Developed by <a href='https://twitter.com/Snitrxxm' target='_blank' rel="noreferrer">André Rocha</a></p>
                 </div>
             </footer>
         </div>     
